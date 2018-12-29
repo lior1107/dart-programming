@@ -1,0 +1,18 @@
+void main()
+{
+  //String Interpolation
+  String name="David";
+  print (name);
+  //Using String interpolation with simple literal
+  String messege="My name is $name";
+  //Print messege
+  print(messege);
+  //Using string interpolation to complex literals
+  print ("The length of my name is ${name.length}");
+
+  //Using String interpolation with math
+  //Define integers length and breadth
+  int l=20;
+  int b=10;
+  print("The area of the rectangle is ${l*b}!");
+}
