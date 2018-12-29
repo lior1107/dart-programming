@@ -1,0 +1,23 @@
+void main()
+{
+  //For loop
+  for ( int i=0;i<4;i++)
+    {
+      print("Hello");
+    }
+  int i=0;
+  //While loop which is just like for
+  while(i<4)
+    {
+      print("Hello");
+      i++;
+    }
+    i=0;
+  //Do - While loop : Useful when we don't know what is the the conditional value
+  do
+    {
+      print("Hello");
+      i++;
+    }
+  while(i<4);
+}
