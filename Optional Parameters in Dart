@@ -1,0 +1,31 @@
+external double sqrt(num x);
+external double pow(num x,num exponent);
+//Required Parameters
+void printString(String a, String b, String c)
+{
+  print(a);
+  print(b);
+  print(c);
+}
+
+//Optional parameters
+
+//Optional  parameters
+void printCountries(String a, String b,[String c])
+{
+  print(a);
+  print(b);
+  print(c);
+}
+//Optional named parameters
+//Will be used if we have a large number of parameters
+double findDistance({int x1, int y1,int x2,int y2})=>sqrt((pow((x1-x2),2))+(pow((y1-y2),2)));
+//Optional default parameters
+
+void main()
+{
+  printString("John", "David", "Cohen");
+  printCountries("Japan", "China");
+  findDistance(x1:2,x2:2,y1:3,y2:3);
+
+}
