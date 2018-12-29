@@ -1,0 +1,22 @@
+void main()
+{
+  //We'll use Switch-Case instead of many if with == in them
+  //We can only use String or int in Switch-Case
+  String name="lior";
+  switch(name)
+  {
+    case 'lior':
+      print ('That\'s  my name!');
+      break;
+    case 'John':
+      print ('That\'s not my name!');
+      break;
+    case 'David':
+      print ('That\'s not my name!');
+      break;
+      default:
+        print('No-one is called like that in our country!');
+        break;
+
+  }
+}
