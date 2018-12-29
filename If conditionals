@@ -1,0 +1,28 @@
+void main()
+{
+  //Regular if else statement
+var name='lior';
+    if(name=='lior')
+      print ('Hey that\'s me!');
+    else
+      print('Not me at all!');
+    //if else if else
+  var temp=-100;
+  if(temp>30)
+    {
+      print('It\'s very hot outside');
+    }
+  else if(temp>20 && temp <=30)
+  {
+    print('It\'s warm and nice!');
+  }
+  else if(temp <=20 && temp >=0)
+  {
+    print("You shoul've brought a coat!");
+  }
+   else
+     {
+       print ("Just don't go outside.");
+     }
+
+}
