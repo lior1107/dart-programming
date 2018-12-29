@@ -1,0 +1,50 @@
+void main()
+{
+  //Exception Handling
+  try {
+    int divisionResault = 12 ~/ 0;
+    print(divisionResault);
+  }
+  //If we are sure we are going to get a specific exception well use "on"
+  on IntegerDivisionByZeroException
+  {
+    print("You cant divide by 0.");
+  }
+ //In case we are not sure what exception we are going to get we'll use catch
+  try {
+    int divisionResault1 = 12 ~/ 0;
+    print(divisionResault1);
+  }
+  //e is the object of the exception
+  catch(e)
+  {
+    print("EXCEPTION $e");
+  }
+  //Using stacktrace to know what happened before the exception
+  try {
+    int divisionResault1 = 12 ~/ 3;
+    print(divisionResault1);
+  }
+  //e is the object of the exception
+  catch(e ,t)
+  {
+    print("EXCEPTION $e");
+    print("the stacktrace is $t");
+  }
+  //Finally clause is executed no matter whether there was an exception or not
+  try {
+    int divisionResault1 = 12 ~/ 0;
+    print(divisionResault1);
+  }
+  //e is the object of the exception
+  catch(e ,t)
+  {
+    print("EXCEPTION $e");
+    print("the stacktrace is $t");
+  }
+  finally
+      {
+        print("Finished!");
+      }
+
+}
