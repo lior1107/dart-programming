@@ -1,0 +1,26 @@
+//Custom Exception Handling
+class DepositException implements Exception
+{
+  String errorMessege(){
+   return "Cannot deposit negative amout";
+}
+
+
+}
+void DepositMoney(int money)
+{
+  if(money<0)
+  {
+    throw new DepositException();
+  }
+}
+void main()
+{
+  try{
+    DepositMoney(-100);
+  }
+  catch(e)
+  {
+    print(e.errorMessege());
+  }
+}
