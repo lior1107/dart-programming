@@ -1,0 +1,34 @@
+void main()
+{
+  //Int
+  int age=10;
+  //double
+  double number=10.0;
+  //String
+  String name= "John";
+  //Boolean
+  bool isBlack=true;
+  //Exponential
+  double exp=1.59e12;
+
+
+
+  //Using var
+  //Sets var of type Dynamic if we don't set a value at first
+  var n;
+  n=5;
+  n="lior";
+  print(n);
+  //Sets var of specific type
+  var n1=5;
+  //will produce us a compilation error
+  //n1="lior";
+
+  //Using dynamic variable that allows us to change the type of the variable
+  dynamic m=1;
+  //Print 1
+  print(m);
+  m="lior";
+  //print lior
+  print(m);
+}
