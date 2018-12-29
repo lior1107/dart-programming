@@ -1,0 +1,11 @@
+void main()
+{
+  //Final and const are automatically of type Var
+  //Final can only be set once and it's initialized when used
+  final name='lior';
+  //Const variable is initialized when compiled
+  const pi=3.14;
+  const double pi1=3.14;
+  //The final is going to be allocated now
+  print(name);
+}
