@@ -1,0 +1,17 @@
+void main() {
+  
+  //condition ? a:b
+  //if condition is true it executes a else executes b
+  int num1 = 1;
+  int num2 = 2;
+  (num1 < num2) ? print("num1 is smaller") : print("num2 is smaller");
+
+  //Using a??b that allows us to check whether a isn't null and return it else return b
+  String name="lior";
+  String name1=null;
+  String defaultName="This is the default name!";
+  String nameToPrint=name??defaultName;
+  print(nameToPrint);
+  nameToPrint=name1??defaultName;
+  print(nameToPrint);
+}
