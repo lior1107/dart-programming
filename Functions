@@ -1,0 +1,12 @@
+//Function that find a rectangle area
+//We can remove the return type
+int findArea(int length, int breadth)
+{
+  return length*breadth;
+}
+
+
+void main()
+{
+ print(findArea(2,50));
+}
